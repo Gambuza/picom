@@ -1,0 +1,57 @@
+@font-face {
+font-family: 'Gotham Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('fonts/Gotham Pro Bold'), url('fonts/GothaProBol.woff') format('fonts/woff');
+}
+// adjustment(регулировка)
+html, body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-color: white;
+	font-family:@font-text;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.footer{
+	height: 20px;
+	margin-top: -20px;
+	position: relative;
+}
+.empty{
+	height: 20px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+	}
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.btn{
+background: #a3b7d9;
+background: -moz-linear-gradient(top,  #a3b7d9 0%, #4963a1 100%);
+background: -webkit-linear-gradient(top,  #a3b7d9 0%,#4963a1 100%);
+background: linear-gradient(to bottom,  #a3b7d9 0%,#4963a1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3b7d9', endColorstr='#4963a1',GradientType=0 );
+color: white;
+display: table;	
+padding: 10px;
+border-radius: 10px;
+height:30px;
+width: 	100px;
+vertical-align: middle;	
+}
+// header(заголовок)

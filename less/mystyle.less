@@ -1,9 +1,3 @@
-@font-face {
-font-family: 'Gotham Pro Bold';
-font-style: normal;
-font-weight: normal;
-src: local('fonts/Gotham Pro Bold'), url('fonts/GothaProBol.woff') format('fonts/woff');
-}
 // adjustment(регулировка)
 html, body{
 	width: 100%;
@@ -38,7 +32,9 @@ p{
 	padding: 0;
 }
 a{
-	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
 }
 .btn{
 background: #a3b7d9;
@@ -47,11 +43,100 @@ background: -webkit-linear-gradient(top,  #a3b7d9 0%,#4963a1 100%);
 background: linear-gradient(to bottom,  #a3b7d9 0%,#4963a1 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3b7d9', endColorstr='#4963a1',GradientType=0 );
 color: white;
+text-decoration: none;
 display: table;	
-padding: 10px;
-border-radius: 10px;
+padding: 5px;
+border-radius: 5px;
 height:30px;
 width: 	100px;
-vertical-align: middle;	
+vertical-align: middle;
+&:hover{
+	opacity: 0.7;
+	color: white;
+	-webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
 }
 // header(заголовок)
+h1{
+	font-size: 31px;
+}
+// Контейнер продукции
+.nav-products{
+	display: inline-block;
+	width: 100%;
+	background-color: @base-color;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 30px;
+	span{
+		color: white;
+		strong{
+			font-weight: 300;
+		}
+		a{
+		padding: 0 5px;
+	    color: white;
+		text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+.sorting{
+	strong{
+		text-transform: uppercase;
+	}
+}
+.product{
+	margin-top: 30px;
+	.header-product{
+		a{
+			color: @text-color;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	img{
+		width: 100%;
+		margin: 15px 0;
+	}
+	div{
+		display: inline-block;
+		width: 100%;
+		.price{
+			color:@primary-color;
+			strong{
+				font-size: 25px;
+				padding: 0 10px;
+			}
+		}
+	}
+	.options{
+		color: #a8a8a8;
+		font-size: 16px;
+		margin: 15px 0;
+	}
+	.buy{
+		display: inline-block;
+		width: 100%;
+		span{
+			padding: 5px 0;
+			color: @primary-color;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		}
+}
+
+// media 
+
+@media (min-width: 1200px){
+.container {width: 960px;}
+}

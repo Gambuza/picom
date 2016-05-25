@@ -28,10 +28,43 @@
 		<div class="row">
 		<!-- фильр поиска товаров -->
 			<div class="col-sm-3">
-				<div class="sidebar">
-					
-				</div>
+			<div class="filter">
+			<h3>Цена:</h3>
+<div id="slider-range"></div>
+<div id='setting'>
+	<form method='post'>
+<div class="col-sm-6">
+	<label for='price'>
+		От:
+			<input type="text" name="price" id="price" maxlength="10" value="1000">
+		</label>
+</div>
+<div class="col-sm-6">
+	<label for='price2'>
+		До:	
+			<input type="text" name="price" id="price2" maxlength="10" value="5000">
+		</label>
+</div>
+	</form>
+</div>
+	<div class="col-sm-12">
+	<div class="size">
+	<h3>Размеры:</h3>
+		<div><input type="radio" checked="checked" name="raz"/><strong>1250x650</strong></div>
+		<div><input type="radio" checked="checked" name="raz"/><strong>1250x650</strong></div>
+		<div><input type="radio" checked="checked" name="raz"/><strong>1250x650</strong></div>
+	</div>
+	</div>
+<div class="col-sm-12">
+	<h3>Цвет:</h3>
+	<div class="greyolive" onclick="this.className = (this.className == 'greyolive click' ? 'greyolive' : 'greyolive click')"></div>
+	<div class="yellowolive" onclick="this.className = (this.className == 'yellowolive click' ? 'yellowolive' : 'yellowolive click')"></div>
+	<div class="brownolive" onclick="this.className = (this.className == 'brownolive click' ? 'brownolive' : 'brownolive click')"></div>
+	<div class="blackolive" onclick="this.className = (this.className == 'blackolive click' ? 'blackolive' : 'blackolive click')"></div>
+	<a href="#" class="btn text-center pull-right">Применить</a>
+</div>
 				<!-- конец фильтра товаров -->
+			</div>
 			</div>
 			<!-- виды продукции -->
 			<div class="col-sm-9">
@@ -45,7 +78,7 @@
 			</span>
 			</div>
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-4 block-product">
 					<div class="product">
 						<span class="header-product"><a href="#">Детская кроватка H8-6/4ac &laquo;Лиза&raquo;</a></span>
 						<img src="images/bed.png" alt="Кроватка">
@@ -61,7 +94,7 @@
 						</div>
 				</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 block-product">
 				<div class="product">
 						<span class="header-product"><a href="#">Детская кроватка H8-6/4ac &laquo;Лиза&raquo;</a></span>
 						<img src="images/bed.png" alt="Кроватка">
@@ -77,7 +110,7 @@
 						</div>
 				</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 block-product">
 				<div class="product">
 						<span class="header-product"><a href="#">Детская кроватка H8-6/4ac &laquo;Лиза&raquo;</a></span>
 						<img src="images/bed.png" alt="Кроватка">
@@ -95,8 +128,9 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-4 block-product">
 				<div class="product">
+				<div class="action"><a href="#">Акция</a></div>
 						<span class="header-product"><a href="#">Детская кроватка H8-6/4ac &laquo;Лиза&raquo;</a></span>
 						<img src="images/bed.png" alt="Кроватка">
 						<div>
@@ -111,8 +145,9 @@
 						</div>
 				</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 block-product">
 				<div class="product">
+				<div class="action"><a href="#">Новинки</a></div>
 					<span class="header-product"><a href="#">Детская кроватка H8-6/4ac &laquo;Лиза&raquo;</a></span>
 						<img src="images/bed.png" alt="Кроватка">
 						<div>
@@ -127,7 +162,7 @@
 						</div>
 				</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 block-product">
 				<div class="product">
 						<span class="header-product"><a href="#">Детская кроватка H8-6/4ac &laquo;Лиза&raquo;</a></span>
 						<img src="images/bed.png" alt="Кроватка">
@@ -147,7 +182,7 @@
 			</div>
 		</div>
 	</div>
-
+<!-- конец видов продукции -->
 
 
 
@@ -172,7 +207,7 @@
 <footer class="footer">
 </footer>
 <!-- конец -->
-<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/ui.js"></script>
 </body>
 </html>
